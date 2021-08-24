@@ -17,6 +17,7 @@ fi
 
 # Setup Github
 chmod -R 700 ~/.ssh/*
+cp ./ssh-config ~/.ssh/config
 touch ~/.ssh/known_hosts
 ssh-keyscan -H github.com >> ~/.ssh/known_hosts
 chmod -R 400 ~/.ssh/*
@@ -28,4 +29,6 @@ read -p "Enter Your E-Mail: " email
 
 git config --global user.name $name
 git config --global user.email $email
+
+git config core.sshCommand "ssh -i $file -F /dev/null"
 
