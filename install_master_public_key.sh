@@ -1,0 +1,7 @@
+#!/bin/bash
+set -e
+
+mkdir -p ~/.ssh/
+echo "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDErImfKXd0772K0XuRTm0xUFqAROVWD+dVujoDiphaoG4ul+6H7VaA7iWnMq9W2w8AAgMghL345qg92AdD7xtOHMzC5lECBEylgJ41KHvkhdQnIxRhfzm8rCXJPj6iDaqqsZuoYHuvFsleVQEb/Ie8weT8yPS8uB93lq5bH/z1XP6giSJeIzkOXXTX7sI23aZtMErrhQhcUAbySkgX+JmrvILPkNwEC4vWgDawlf2Q3wKg3NDukSgLsvoYvwJvWFjMf96VBAIpNOaqdriTOjTOXIZuX0yw+NKg56j3BQamNxGDfqEH+HdR6quE+P4ujUSQVy8lPfoqz5TWaZ4cr6us0tQXmZuQYd3j0EHUTiLQr+ZpDQo4tx0+T2/D5vJvK37NyXVUWpc4DgYrsh7hkvMGQht7r/Us96MZlcqNDKpwsKQcwIRX813YP4wMG+yKy9NT0b7dICJWc8Re2hFIWAvYyfgPFkGNVxIB3tMgKgD3e9WCuFb84dFYqGIWjXZDWkE= MainKey" >>  ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+chmod 700 ~/.ssh/
