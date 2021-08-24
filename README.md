@@ -9,3 +9,5 @@ chmod +x ./*.sh
 ./install_public_keys.sh 
 ./install_private_keys.sh 
 ```
+
+Change to git remote to ssh 
